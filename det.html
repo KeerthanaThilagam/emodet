@@ -1,0 +1,189 @@
+<!--REGISTRATION SUCCESSFUL-->
+<!DOCTYPE html>
+<html>
+<head>
+    <TITLE>
+        EMOTION DETECTION
+    </TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/*h2{
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    color: #fff;
+}
+p{
+  text-align: center;
+  color: #fff;
+}
+.container {
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 200%;
+  left: 20%;
+  top: 70%;
+  max-width: 400px;
+}
+/*
+.container img {
+  width: 200%;
+  left: 60%;
+  bottom: 50%;
+  height: auto;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: #625bff;
+  --bg-color: #141218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  left: 33%;
+  
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+</style>
+</head>
+<body>
+  <script>
+    function go(){
+      window.open("face-detection.html");
+    }
+
+
+
+
+  </script>
+<form method="POST">
+<h2 style="color:aliceblue;text-align:center">Face Detection</h2>
+<p style="color:aliceblue;text-align:center">Click on the button to detect your emotions</p>
+
+<div class="container">
+  <!--a href="face-detection.html"-->
+    <img src="images/features-icon-1.png" alt="Face"></a>
+</div>
+<button style="--content: 'Face Detection!';" onclick="go()">
+  <div class="left"></div>
+    Face Detection!
+  <div class="right"></div>
+</button>
+
+
+</form>
+</body>
+</html>
