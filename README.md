@@ -15,7 +15,7 @@ Hardware Requirements
 
 ```
 Processor:   i3 or more
- RAM     :4 GB or more
+ RAM     :   4 GB or more
 
 ```
 Software Requirements
